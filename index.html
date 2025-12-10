@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전형 사회민주주의 정책 비전 및 로드맵</title>
+    <!-- SocialDemocraticParty_Daejeon_Infographic.html 디자인 반영 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Chosen Palette: Orange PI (#F58400) for Main Accent, Emerald Green PI (#059669) for Footer -->
+    <!-- Colors: Orange (#F58400), Green (#43A213), Blue (#2563EB), Purple (#7C3AED) on Warm Neutral (#FFF7ED) -->
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #FFF7ED; /* Warm Neutral - 유지 */
+            color: #1F2937;
+        }
+
+        .section-fade {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Custom Scrollbar for a cleaner look: Orange PI 복원 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF7ED;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FED7AA; /* Lighter Orange */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F58400; /* Orange PI equivalent */
+        }
+        
+        /* Card transition for the 4 pillars */
+        .policy-card-nav {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .policy-card-nav:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<!-- PI 색상을 Orange Green으로 변경 (selection 색상도 복원) -->
+<body class="antialiased selection:bg-orange-200 selection:text-orange-900">
+
+    <!-- Header Section: border-b-4 border-orange-600로 복원 -->
+    <header class="bg-white shadow-sm border-b-4 border-orange-600 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="font-black text-2xl tracking-tighter cursor-pointer" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+                <!-- SDP Daejeon을 먼저 크게 표시 (Orange PI 복원) -->
+                <span class="text-orange-600">SDP Daejeon</span>
+                <!-- "대전형 사회민주주의"를 오른쪽에 작게 (text-lg) 배치 -->
+                <span class="text-lg text-gray-800 ml-2 font-medium">대전형 사회민주주의</span>
+            </div>
+            <!-- 모바일/데스크탑 네비게이션 -->
+            <nav class="hidden md:flex space-x-6 text-sm font-bold text-gray-600">
+                <!-- 홈 링크 색상을 Orange PI로 복원 -->
+                <a href="#" class="text-orange-600 hover:text-orange-800 transition-colors font-extrabold">홈</a>
+                <a href="#roadmap" class="hover:text-orange-600 transition-colors">정책 비전</a>
+                <span class="text-gray-400">|</span>
+                <!-- 각 정책별 개별 페이지 링크 -->
+                <a href="policy-fairness.html" class="hover:text-orange-600 transition-colors">🤝 공정 사회</a>
+                <a href="policy-sustain.html" class="hover:text-green-600 transition-colors">🌳 지속 도시</a>
+                <a href="policy-economy.html" class="hover:text-blue-600 transition-colors">🚀 혁신 경제</a>
+                <!-- 4. 투명 행정 -> 시민 주권으로 변경 -->
+                <a href="policy-democracy.html" class="hover:text-purple-600 transition-colors">🏛️ 시민 주권</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-24">
+
+        <!-- Introduction / Vision Section: Orange PI 복원 -->
+        <section id="vision" class="text-center space-y-12 section-fade scroll-mt-24">
+            <!-- bg-orange-100, text-orange-700으로 복원 -->
+            <span class="inline-block px-4 py-1.5 bg-orange-100 text-orange-700 rounded-full text-md font-bold tracking-wide mb-2 shadow-sm">
+                사회민주당 대전시당 VISION 2030
+            </span>
+            <h1 class="text-6xl md:text-8xl font-black text-gray-900 leading-none">
+                <!-- 텍스트 색상 및 밑줄 색상 Orange PI로 복원 -->
+                대전, <span class="text-orange-600 inline-block underline decoration-8 underline-offset-8 decoration-orange-400">든든한 삶</span>
+            </h1>
+            
+            <!-- 슬로건: 배경색(bg-orange-200)으로 복원 -->
+            <div class="max-w-full mx-auto text-center">
+                <p class="inline-block px-4 py-3 text-xl md:text-3xl text-gray-900 font-medium leading-loose bg-orange-200 rounded-lg shadow-inner">
+                    "당신의 삶이 흔들리지 않도록,<br>
+                    대전이 든든한 울타리가 되겠습니다."
+                </p>
+            </div>
+        </section>
+
+        <!-- 4대 비전 Section -->
+        <section id="roadmap" class="scroll-mt-24 py-12">
+            <!-- 제목: "4대 비전" 유지 -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+                <span class="text-4xl text-blue-600">🌐</span> 4대 비전
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card 1: 공정하고 포용적인 사회 (Border Color, Text Color Orange PI 복원) -->
+                <a href="policy-fairness.html" class="block p-8 bg-white rounded-2xl shadow-xl border-t-8 border-orange-500 policy-card-nav text-left hover:shadow-2xl">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="font-black text-2xl text-gray-900 mb-2">공정하고 포용적인 사회</h3>
+                    <p class="text-md text-gray-600 font-medium leading-snug mt-3">
+                        "살던 곳에서, 누리던 삶 그대로, 대전이 곁에서 돌봅니다."
+                    </p>
+                    <!-- 텍스트 색상 및 경계선 색상 Orange PI로 복원 -->
+                    <p class="mt-6 text-sm font-bold text-orange-600 border-t pt-2 border-orange-100">통합돌봄 · 공정 주거</p>
+                </a>
+                
+                <!-- Card 2: 지속가능하고 안전한 도시 (Green 유지) -->
+                <a href="policy-sustain.html" class="block p-8 bg-white rounded-2xl shadow-xl border-t-8 border-green-500 policy-card-nav text-left hover:shadow-2xl">
+                    <div class="text-4xl mb-4">🌳</div>
+                    <h3 class="font-black text-2xl text-gray-900 mb-2">지속가능하고 안전한 도시</h3>
+                    <p class="text-md text-gray-600 font-medium leading-snug mt-3">
+                        "오늘의 과학으로 내일의 안전을, 푸르게 혁신하는 대전."
+                    </p>
+                    <p class="mt-6 text-sm font-bold text-green-600 border-t pt-2 border-green-100">탄소 중립 · 도시 회복력</p>
+                </a>
+
+                <!-- Card 3: 혁신적인 지역 경제 및 미래 산업 -->
+                <a href="policy-economy.html" class="block p-8 bg-white rounded-2xl shadow-xl border-t-8 border-blue-500 policy-card-nav text-left hover:shadow-2xl">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="font-black text-2xl text-gray-900 mb-2">혁신적인 지역 경제 및 미래 산업</h3>
+                    <p class="text-md text-gray-600 font-medium leading-snug mt-3">
+                        "내일의 일터는 과학의 온기로, 함께 배우고 함께 일합니다."
+                    </p>
+                    <p class="mt-6 text-sm font-bold text-blue-600 border-t pt-2 border-blue-100">기술 자산화 · 평생 학습</p>
+                </a>
+
+                <!-- Card 4: 시민 주권 강화와 투명한 행정 -->
+                <a href="policy-democracy.html" class="block p-8 bg-white rounded-2xl shadow-xl border-t-8 border-purple-500 policy-card-nav text-left hover:shadow-2xl">
+                    <div class="text-4xl mb-4">🏛️</div>
+                    <h3 class="font-black text-2xl text-gray-900 mb-2">시민 주권 강화와 투명한 행정</h3>
+                    <p class="text-md text-gray-600 font-medium leading-snug mt-3">
+                        "시민의 지혜로 시정을 열고, 모든 과정은 투명하게 흘러갑니다."
+                    </p>
+                    <p class="mt-6 text-sm font-bold text-purple-600 border-t pt-2 border-purple-100">예산 숙의 · 데이터 주권</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section: bg-emerald-900 (짙은 녹색 PI 계열) 유지 -->
+    <footer class="bg-emerald-900 text-white py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-4">사회민주당 대전시당</h3>
+            <p class="text-gray-300 mb-8">대전, 든든한 삶을 위한 약속</p>
+            <div class="text-sm text-gray-400">
+                &copy; 2025 Social Democratic Party Daejeon. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
