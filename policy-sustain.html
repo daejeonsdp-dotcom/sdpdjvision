@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지속가능하고 안전한 도시 정책</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Orange PI: #F58400 (tailwind orange-600) */
+        /* Neutral Background: #FFF7ED */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #FFF7ED; 
+            color: #1F2937;
+            min-height: 100vh;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF7ED;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FDBA74; /* orange-300 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #F97316; /* orange-600 */
+        }
+        
+        /* Infographic Card Style */
+        .info-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .info-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.15), 0 8px 10px -6px rgba(249, 115, 22, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-orange-200 selection:text-orange-900">
+
+    <!-- Header Section: 고정된 디자인 유지 -->
+    <header class="bg-white shadow-md border-b-4 border-orange-600 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="font-black text-2xl tracking-tighter cursor-pointer" onclick="window.location.href='index.html'">
+                <span class="text-orange-600">SDP Daejeon</span>
+                <span class="text-lg text-gray-800 ml-2 font-medium">대전형 사회민주주의</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-bold text-gray-600">
+                <a href="index.html" class="hover:text-orange-800 transition-colors">홈</a>
+                <a href="index.html#roadmap" class="hover:text-orange-600 transition-colors">정책 비전</a>
+                <span class="text-gray-400">|</span>
+                <a href="policy-fairness.html" class="hover:text-orange-600 transition-colors">🤝 공정 사회</a>
+                <!-- Current Page Active -->
+                <a href="policy-sustain.html" class="text-orange-600 font-extrabold transition-colors">🌳 지속 도시</a>
+                <a href="policy-economy.html" class="hover:text-orange-600 transition-colors">🚀 혁신 경제</a>
+                <a href="policy-democracy.html" class="hover:text-orange-600 transition-colors">🏛️ 시민 주권</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-16 space-y-16">
+
+        <!-- 1. 타이틀 섹션 -->
+        <section class="text-center space-y-6">
+            <h1 class="text-5xl md:text-6xl font-black text-gray-900 tracking-tight">
+                지속가능하고 안전한 도시
+            </h1>
+            <p class="text-2xl md:text-3xl text-orange-600 font-bold leading-relaxed">
+                "오늘의 과학으로 내일의 안전을, 푸르게 혁신하는 대전."
+            </p>
+        </section>
+
+        <!-- 2. 인트로 설명 섹션 (Emerald/Green Accent - 수정된 부분) -->
+        <section class="bg-white p-8 md:p-10 rounded-2xl shadow-lg border-l-8 border-emerald-500">
+            <p class="text-xl text-gray-700 leading-loose font-medium">
+                대전형 사회민주주의에서 <span class="text-emerald-600 font-bold">'미래의 책임(Future Responsibility)'을 실현하는 분야</span>입니다. 기후 위기 대응을 공공의 최우선 의제로 설정하고, 대덕특구의 과학적 역량을 활용하여 도시의 탄소 중립 전환을 주도합니다. 시민의 참여와 과학 기술을 결합해 재난과 환경 위험으로부터 안전한 도시 환경을 구축합니다.
+            </p>
+        </section>
+
+        <!-- 3. 핵심 실천 과제 (3대 중점) - 인포그래픽 스타일 -->
+        <section>
+            <div class="flex items-center mb-8">
+                <span class="text-4xl mr-4">🌿</span>
+                <h2 class="text-3xl font-extrabold text-gray-900">핵심 실천 과제 (3대 중점)</h2>
+            </div>
+
+            <div class="space-y-8">
+                
+                <!-- 과제 1: 탄소 중립 도시 전환 및 에너지 자립 (Orange-600) - 이전 수정 사항 유지 -->
+                <div class="info-card bg-white rounded-2xl shadow-md overflow-hidden border border-orange-100">
+                    <div class="bg-orange-600 p-4 flex items-center">
+                        <span class="bg-white text-orange-600 font-black rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                        <h3 class="text-xl font-bold text-white">탄소 중립 도시 전환 및 에너지 자립</h3>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-lg text-gray-700 mb-6 font-medium">
+                            2040년 탄소 중립 목표 달성을 위해 에너지 자립을 강화하고 시민 주도의 녹색 전환을 추진합니다.
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-emerald-50 p-5 rounded-xl">
+                                <div class="text-3xl mb-2">🔥</div>
+                                <h4 class="font-bold text-emerald-800 mb-2">도시 열 공급망 공공화 및 효율 개선</h4>
+                                <p class="text-sm text-gray-600">지역 난방 시스템을 공공이 주도하여 재생에너지 기반으로 전환하고 효율을 극대화.</p>
+                            </div>
+                            <div class="bg-emerald-50 p-5 rounded-xl">
+                                <div class="text-3xl mb-2">🤝</div>
+                                <h4 class="font-bold text-emerald-800 mb-2">지역 에너지 협동조합 육성</h4>
+                                <p class="text-sm text-gray-600">바르셀로나 모델처럼 시민들이 직접 투자하고 운영하는 재생에너지 생산 및 공급 협동조합을 설립하고 지원.</p>
+                            </div>
+                            <div class="bg-emerald-50 p-5 rounded-xl">
+                                <div class="text-3xl mb-2">🚴</div>
+                                <h4 class="font-bold text-emerald-800 mb-2">자전거 및 보행자 친화 도시 계획</h4>
+                                <p class="text-sm text-gray-600">코펜하겐의 사례를 따라, 대중교통 및 자전거 인프라에 대한 투자를 대폭 확대하고 시민의 녹색 이동을 촉진.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 과제 2: 미래형 대중교통 시스템 구축 -> 탄소 제로 교통 및 보행자 우선 공간 재구성 (수정된 섹션) -->
+                <div class="info-card bg-white rounded-2xl shadow-md overflow-hidden border border-orange-100">
+                    <div class="bg-orange-500 p-4 flex items-center">
+                        <span class="bg-white text-orange-500 font-black rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                        <h3 class="text-xl font-bold text-white">탄소 제로 교통 및 보행자 우선 공간 재구성</h3> <!-- 제목 수정 -->
+                    </div>
+                    <div class="p-8">
+                        <p class="text-lg text-gray-700 mb-6 font-medium">
+                            차량 중심에서 보행자와 대중교통 중심으로 도시 공간을 과감하게 재편하여, 탄소 배출을 줄이고 시민의 안전을 확보합니다. <!-- 내용 수정 -->
+                        </p>
+                        <ul class="space-y-4">
+                            <!-- 주요 내용 1 수정 -->
+                            <li class="flex items-start">
+                                <span class="text-orange-500 mr-2 mt-1">✔</span>
+                                <div>
+                                    <strong class="text-gray-900">보행자 중심 슈퍼블록 확대:</strong>
+                                    <p class="text-gray-600 text-sm mt-1">바르셀로나 슈퍼블록(Superilla) 모델을 도입한 시범 사업을 통해, 생활권 단위의 차량 통행을 제한하고 녹지 및 공공 공간을 확대.</p>
+                                </div>
+                            </li>
+                            <!-- 주요 내용 2 수정 -->
+                            <li class="flex items-start">
+                                <span class="text-orange-500 mr-2 mt-1">✔</span>
+                                <div>
+                                    <strong class="text-gray-900">대중교통 공공성 강화:</strong>
+                                    <p class="text-gray-600 text-sm mt-1">공영 자전거, 트램 및 시내버스 등 대중교통 시스템의 요금 공공 지원을 확대하고, 시민의 접근성과 편의성을 최우선으로 개선.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 과제 3: 도시 재생 (Orange-400) - 중복 회피를 위해 첫 번째 항목 수정 -->
+                <div class="info-card bg-white rounded-2xl shadow-md overflow-hidden border border-orange-100">
+                    <div class="bg-orange-400 p-4 flex items-center">
+                        <span class="bg-white text-orange-400 font-black rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                        <h3 class="text-xl font-bold text-white">시민 삶의 질을 높이는 포용적 도시 재생</h3>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-lg text-gray-700 mb-6 font-medium">
+                            도시 개발의 기준을 경제 논리가 아닌 주민의 행복과 건강에 맞추어, 쾌적하고 안전한 생활 환경을 조성합니다.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- 수정된 항목: 슈퍼블록 중복을 피하고 포괄적인 공간 재편으로 변경 -->
+                            <div class="border-l-4 border-emerald-300 pl-4">
+                                <h4 class="font-bold text-gray-800 mb-1">지역 공동체 중심의 도시 공간 재편</h4>
+                                <p class="text-sm text-gray-600">생활권 내 차량 통행을 최소화하고 보행자와 자전거 중심의 안전한 환경을 조성하여, 주민 주도의 도시 재생을 추진.</p>
+                            </div>
+                            <div class="border-l-4 border-emerald-300 pl-4">
+                                <h4 class="font-bold text-gray-800 mb-1">15분 생활권 녹지 확충</h4>
+                                <p class="text-sm text-gray-600">모든 시민이 15분 이내에 공원 및 녹지에 접근할 수 있도록 도심 녹화 사업 집중 추진.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section: 메인 대시보드와 동일하게 유지 (Emerald Green) -->
+    <footer class="bg-emerald-900 text-white py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-4">사회민주당 대전시당</h3>
+            <p class="text-gray-300 mb-8">대전, 든든한 삶을 위한 약속</p>
+            <div class="text-sm text-gray-400">
+                &copy; 2025 Social Democratic Party Daejeon. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
